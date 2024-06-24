@@ -1,0 +1,14 @@
+
+--------------------------
+      CristianDLB
+--------------------------
+
+<Nota 01><HTML>
+- Lo que esta entre comillas de -> onclick="toggleChannels('competition3')"
+- Igual al Id que quieres mostrar los canales -> id="competition3"
+
+<Nota 02><HTML>
+- onclick="toggleChannels('competition3')"
+	Esta a lado de -> class="competition"
+- id="competition3" 
+	Esta a lado de -> class="channels"

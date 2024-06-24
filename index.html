@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Deportiva de Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Agenda Deportiva - 26 de Junio de 2024</h1>
+        <div class="agenda">
+            <div class="header">
+                <div class="time-header">Hora</div>
+                <div class="competition-header">Competición</div>
+            </div>
+            <br>
+            <div class="competition" onclick="toggleChannels('competition1')">
+                <div class="time">2:00pm</div>
+                <img src="https://api.sofascore.app/api/v1/unique-tournament/1/image" alt="España" class="country-logo">
+                <div class="match">
+                    <img src="https://api.sofascore.app/api/v1/team/4699/image" alt="Team 1" class="team-logo">
+                    <span class="letras">Suiza vs Alemania</span>
+                    <img src="https://api.sofascore.app/api/v1/team/4711/image" alt="Team 2" class="team-logo">
+                </div>
+                <span class="tipoComp">Eurocopa</span>
+            </div>
+            <div id="competition1" class="channels">
+                <div class="channel-row">
+                    <a href="https://www.espn.com" target="_blank" class="channel-name">ESPN</a>
+                    <div class="channel-quality">720p</div>
+                </div>
+                <div class="channel-row">
+                    <a href="https://www.foxsports.com" target="_blank" class="channel-name">Fox Sports</a>
+                    <div class="channel-quality">1080p</div>
+                </div>
+            </div>
+            <br>
+            <div class="competition" onclick="toggleChannels('competition2')">
+                <div class="time">5:00pm</div>
+                <img src="https://api.sofascore.app/api/v1/unique-tournament/133/image" alt="Inglaterra" class="country-logo">
+                <div class="match">
+                    <img src="https://api.sofascore.app/api/v1/team/4724/image" alt="Team 3" class="team-logo">
+                    <span class="letras" >USA vs Bolivia</span>
+                    <img src="https://api.sofascore.app/api/v1/team/4746/image" alt="Team 4" class="team-logo">
+                </div>
+                <span class="tipoComp">Copa America</span>
+            </div>
+            <div id="competition2" class="channels">
+                <div class="channel-row">
+                    <a href="https://www.bbc.com" target="_blank" class="channel-name">BBC</a>
+                    <div class="channel-quality">720p</div>
+                </div>
+                <div class="channel-row">
+                    <a href="https://www.skysports.com" target="_blank" class="channel-name">Sky Sports</a>
+                    <div class="channel-quality">1080p</div>
+                </div>
+            </div>
+
+            <br>
+            <div class="competition" onclick="toggleChannels('competition3')">
+                <div class="time">10:00pm</div>
+                <img src="https://www.sofascore.com/static/images/flags/indycar.png" alt="Inglaterra" class="country-logo">
+                <div class="match">
+                    <img src="https://www.sofascore.com/static/images/flags/indycar.png" alt="Team 3" class="team-logo">
+                    <span class="letras" >IndyCar Series</span>
+                    <img src="https://www.sofascore.com/static/images/flags/indycar.png" alt="Team 4" class="team-logo">
+                </div>
+                <span class="tipoComp">WeatherTech Raceway Laguna Seca (Carrera)</span>
+            </div>
+            <div id="competition3" class="channels">
+                <div class="channel-row">
+                    <a href="https://www.bbc.com" target="_blank" class="channel-name">Tv</a>
+                    <div class="channel-quality">720p</div>
+                </div>
+                <div class="channel-row">
+                    <a href="https://www.skysports.com" target="_blank" class="channel-name">Usa Sports</a>
+                    <div class="channel-quality">1080p</div>
+                </div>
+            </div>
+
+            <!-- Agrega más competiciones según sea necesario -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

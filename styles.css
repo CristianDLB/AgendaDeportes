@@ -1,0 +1,246 @@
+body {
+    font-family: Asap, sans-serif;
+    background-color: #0B0F19;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.agenda {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #2F303B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0B0F19;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    flex-basis: auto;
+    border-radius: 3px;
+
+}
+
+.time-header {
+    flex-basis: 48%;
+    text-align: left;
+}
+.competition-header{
+    flex-basis: 48%;
+    text-align: right;
+}
+
+.competition {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    flex-basis: auto;
+    background-color: #470011;
+    color: #070707;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competition:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.competition:last-child {
+    border-bottom: none;
+}
+
+.time {
+    width: 60px;
+    text-align: center;
+    flex-basis: auto;
+    background-color: #cf9434;
+    color: #070707;
+    border-radius: 3px;
+    padding: 2px 6px;
+
+}
+
+.country-logo, .team-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-grow: 1;
+    color: #FFF;
+}
+
+.channels {
+    display: none;
+    padding: 10px;
+    background-color: #1E1E1E;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.tipoComp{
+    flex-basis: auto;
+    text-align: right;
+    background-color: #2166ce;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+.channel-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #1E1E1E;
+}
+
+.channel-name {
+    flex-basis: 70%;
+    text-align: left;
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.channel-name:hover {
+    text-decoration: none;
+    color: #2166ce;
+}
+
+.channel-quality {
+    flex-basis: auto;
+    text-align: right;
+    border-radius: 10px;
+    background-color: #cf9434;
+    color: #070707;
+    border-radius: 3px;
+    padding: 2px 6px;
+
+
+}
+
+.channels p {
+    margin: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .agenda {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .header {
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .time-header {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+
+    .competition {
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .tipoComp{
+        flex-basis: 10%;
+        text-align: center;
+    }
+
+     .match {
+        width: 0%;
+        text-align: left;
+        margin-bottom: 5px;
+        margin: 2px 0;
+    }
+
+    .team-logo {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    .country-logo{
+        width: 24px;
+        height: 24px;
+        margin: 0 5px;
+    }
+
+
+    @media (max-width: 375px) {
+        .letras{
+            display: none;
+        }
+
+        .team-logo {
+            width: 24px;
+            height: 24px;
+            margin: 0 8%;
+        }
+        .country-logo{
+            display: none;
+            width: 28px;
+            height: 28px;
+        }
+        .time {
+            margin: 1% 1px;
+        }
+        .tipoComp{
+            margin: 1% 1px;
+        }
+
+    }
+
+
+    .channels {
+        padding: 5px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .channel-row {
+        align-items: flex-start;
+    }
+
+    .channel-name, .channel-quality {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .channel-quality {
+        text-align: right;
+    }
+}
